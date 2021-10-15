@@ -33,7 +33,7 @@ podTemplate(label: '12-mall',
         stage('Push'){
             container('docker'){
                 script {
-                    docker.withRegistry("https://979050235289.dkr.ecr.ap-southeast-2.amazonaws.com/", "ecr:ap-southeast-2:ecr-cred"){
+                    docker.withRegistry("https://979050235289.dkr.ecr.ap-southeast-2.amazonaws.com/", "ecr:ap-northeast-1:ecr-cred"){
                         appImage.push("${env.BUILD_NUMBER}")
                         appImage.push("latest")
                     }
