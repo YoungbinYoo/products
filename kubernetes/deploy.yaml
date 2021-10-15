@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: product
-          image: 052937454741.dkr.ecr.ap-northeast-1.amazonaws.com/12st-user25-product:${BUILD_NUMBER}
+          image: 052937454741.dkr.ecr.ap-northeast-1.amazonaws.com/12st-user04-product:${BUILD_NUMBER}
           ports:
             - containerPort: 8080
